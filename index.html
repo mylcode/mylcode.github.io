@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My thoughts during my life in AI</title>
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --fg: #e8e6e3;
+      --muted: #8a8f98;
+      --accent: #7aa2f7;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background: radial-gradient(circle at 30% 20%, #15171f 0%, var(--bg) 60%);
+      color: var(--fg);
+      font-family: "Georgia", "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      overflow: hidden;
+    }
+
+    main {
+      max-width: 720px;
+      text-align: center;
+      animation: fade-in 2s ease both;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 400;
+      line-height: 1.25;
+      margin: 0;
+      letter-spacing: 0.01em;
+    }
+
+    h1 .em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.06em;
+      height: 1em;
+      background: var(--accent);
+      margin-left: 0.08em;
+      vertical-align: -0.1em;
+      animation: blink 1.1s steps(1) infinite;
+    }
+
+    .sub {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .rule {
+      width: 60px;
+      height: 1px;
+      background: var(--muted);
+      opacity: 0.4;
+      margin: 1.5rem auto 0;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>My thoughts during my <span class="em">life in AI</span><span class="cursor" aria-hidden="true"></span></h1>
+    <div class="rule"></div>
+    <p class="sub">a work in progress</p>
+  </main>
+</body>
+</html>
